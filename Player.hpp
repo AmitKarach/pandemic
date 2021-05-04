@@ -1,14 +1,13 @@
 #pragma once
 #include "Board.hpp"
 #include <string>
-using namespace std;
 
 namespace pandemic {
 class Player{
     private:
         Board board;
         City city;
-        string job;
+        std::string job;
 
     public:
         Player(Board& b, City c, std::string r)
@@ -25,7 +24,7 @@ class Player{
         virtual Player& discover_cure(Color c);
         //lower one block of ilnace from the city
         virtual Player& treat(City c);
-        string role()
+        std::string role()
         {
             return job;
         }
