@@ -13,7 +13,7 @@ int& Board::operator[] (City c)
 {
     return lvl_of_disease[c];
 }
-ostream& pandemic::operator<<(ostream& out, const Board& b)
+std::ostream& pandemic::operator<<(std::ostream& out, const Board& b)
 {
     return out;
 }

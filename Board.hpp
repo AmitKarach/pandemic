@@ -10,7 +10,7 @@ class Board{
     public:
         Board() {}
         void remove_cures();
-        bool is_clean();
+        static bool is_clean();
         int& operator[] (City c);
         friend std::ostream& operator<<(std::ostream& out, const Board& b);
 };
