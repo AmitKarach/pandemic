@@ -1,9 +1,15 @@
+#pragma once
+#include "Board.hpp"
 #include "Player.hpp"
-namespace pandemic {
-class OperationsExpert : public Player {
+#include "City.hpp"
+#include "Color.hpp"
 
-    public:
-    OperationsExpert(Board& b, City c): Player(b, c, "OperationsExpert") {}
-    Player& build() override;
+namespace pandemic 
+{
+    class OperationsExpert : public Player 
+    {
+        public:
+            OperationsExpert(Board& b, City c): Player(b, c, "OperationsExpert") {}
+            Player& build() override;
 };
 }
