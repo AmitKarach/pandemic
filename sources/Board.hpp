@@ -1,8 +1,9 @@
 #pragma once
-#include "Color.hpp"
 #include "City.hpp"
+#include "Color.hpp"
 #include <map>
 #include <set>
+#include <iostream>
 
 namespace pandemic
 {
